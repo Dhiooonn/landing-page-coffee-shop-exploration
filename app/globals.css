@@ -6,6 +6,7 @@
   --primary: #843919;
   --heading: #2A1A0B;
   --body: #6B6B6B;
+  --description: #737373;
   --accent: #F15E01;
   --surface: #F8F7F3;
   --surface-icon: #ECE7E2;
@@ -17,6 +18,7 @@
   --color-primary: var(--primary);
   --color-heading: var(--heading);
   --color-body: var(--body);
+  --color-description: var(--description);
   --color-accent: var(--accent);
   --color-surface: var(--surface);
   --color-surface-icon: var(--surface-icon);

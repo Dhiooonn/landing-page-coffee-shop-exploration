@@ -27,25 +27,27 @@ export default function ServeSection() {
   ];
 
   return (
-    <section className="w-full bg-surface py-[80px] md:py-[120px] px-4 md:px-[128px] flex flex-col items-center gap-[48px]">
-      {/* Header Section */}
-      <div className="flex flex-col items-center text-center gap-[20px]">
-        {/* Section Title */}
-        <span className="font-sans font-normal text-[14px] leading-[20px] tracking-[1.25px] uppercase text-accent">
-          WHAT WE SERVE
-        </span>
+    <section className="w-full bg-surface py-[36px] md:py-30 px-3 md:px-20 flex justify-center">
+      <div className="w-full max-w-[1184px] flex flex-col items-center gap-12">
+        {/* Header Section */}
+        <div className="flex flex-col items-center text-center gap-5">
+          {/* Section Title */}
+          <span className="font-sans font-normal text-sm leading-5 tracking-[1.25px] uppercase text-accent">
+            WHAT WE SERVE
+          </span>
 
-        {/* Heading */}
-        <h2 className="font-serif font-medium text-[36px] leading-[150%] tracking-[0px] text-heading">
-          More Than Coffee
-        </h2>
-      </div>
+          {/* Heading */}
+          <h2 className="font-serif font-medium text-2xl md:text-4xl leading-[150%] tracking-[0px] text-heading">
+            More Than Coffee
+          </h2>
+        </div>
 
-      {/* Grid Features Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[32px] w-full justify-items-center">
-        {serveItems.map((item, index) => (
-          <FeatureCard key={index} {...item} />
-        ))}
+        {/* Grid Features Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[36px] md:gap-8 lg:gap-8 w-full justify-items-center">
+          {serveItems.map((item, index) => (
+            <FeatureCard key={index} {...item} />
+          ))}
+        </div>
       </div>
     </section>
   );

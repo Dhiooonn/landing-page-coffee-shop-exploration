@@ -25,7 +25,7 @@ export function Button({
   const sizeStyles = {
     sm: 'text-base leading-tight py-2 px-4',
     md: 'text-base leading-5 py-4 px-6',
-    lg: 'text-base leading-5 py-4 px-8'
+    lg: 'text-base leading-5 py-4 px-6 md:px-8'
   };
 
   const buttonClasses = `${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`.trim();

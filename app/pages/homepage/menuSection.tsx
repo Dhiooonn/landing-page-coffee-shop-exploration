@@ -43,36 +43,38 @@ export default function MenuSection() {
   ];
 
   return (
-    <section className="w-full py-[80px] md:py-[120px] px-4 md:px-[80px] flex flex-col gap-12 items-center">
-      {/* Header Section */}
-      <div className="flex flex-col items-center text-center gap-[20px]">
-        {/* Section Title */}
-        <span className="font-sans font-normal text-[14px] leading-[20px] tracking-[1.25px] uppercase text-accent">
-          OUR CRAFT
-        </span>
+    <section className="w-full py-[36px] md:py-30 px-3 md:px-20 flex justify-center">
+      <div className="w-full max-w-[1184px] flex flex-col gap-12 items-center">
+        {/* Header Section */}
+        <div className="flex flex-col items-center text-center gap-5">
+          {/* Section Title */}
+          <span className="font-sans font-normal text-sm leading-5 tracking-[1.25px] uppercase text-accent">
+            OUR CRAFT
+          </span>
 
-        {/* Heading */}
-        <h2 className="font-serif font-medium text-[36px] leading-[150%] tracking-[0px] text-heading">
-          Highlighted Signature
-        </h2>
+          {/* Heading */}
+          <h2 className="font-serif font-medium text-2xl md:text-4xl leading-[150%] tracking-[0px] text-heading">
+            Highlighted Signature
+          </h2>
 
-        {/* Deskripsi */}
-        <p className="font-sans font-normal text-[16px] leading-[24px] tracking-[-0.31px] text-body max-w-lg">
-          From classic espresso to signature blends, each cup tells a story
-        </p>
+          {/* Deskripsi */}
+          <p className="font-sans font-normal text-sm md:text-base leading-[28px] tracking-[-0.15px] text-body max-w-lg text-center">
+            From classic espresso to signature blends, each cup tells a story
+          </p>
+        </div>
+
+        {/* Grid Card Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 w-full justify-items-center">
+          {menuItems.map((item, index) => (
+            <MenuCard key={index} {...item} />
+          ))}
+        </div>
+
+        {/* Action Button */}
+        <Button variant="primary" size="lg">
+          Explore Full Menu
+        </Button>
       </div>
-
-      {/* Grid Card Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[48px] w-full justify-items-center">
-        {menuItems.map((item, index) => (
-          <MenuCard key={index} {...item} />
-        ))}
-      </div>
-
-      {/* Action Button */}
-      <Button variant="primary" size="lg">
-        Explore Full Menu
-      </Button>
     </section>
   );
 }
