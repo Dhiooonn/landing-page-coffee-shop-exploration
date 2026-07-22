@@ -15,7 +15,7 @@ const playfairDisplay = Playfair_Display({
   display: "swap",
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://monkeycoffee.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://monkeycoffee.vercel.app";
 
 export const viewport: Viewport = {
   themeColor: "#843919",

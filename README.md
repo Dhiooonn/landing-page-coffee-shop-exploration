@@ -2,6 +2,8 @@
 
 Landing page modern untuk kedai kopi **Monkey Coffee**, dibangun sebagai bagian dari *frontend challenge*. Dirancang dengan prinsip desain premium, responsif di semua ukuran layar, dan dioptimasi untuk performa serta SEO.
 
+🌐 **Live Demo:** [monkeycoffee.vercel.app](https://monkeycoffee.vercel.app)
+
 ![Monkey Coffee Preview](/public/images/heroSection.webp)
 
 ---
