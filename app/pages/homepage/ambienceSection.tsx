@@ -1,36 +1,26 @@
-import React from "react";
 import AmbienceCard from "../../components/ui/AmbienceCard";
 
 export default function AmbienceSection() {
   return (
-    <section className="w-full py-[36px] md:py-30 px-3 md:px-20 flex justify-center bg-surface">
+    <section className="w-full py-9 md:py-30 px-3 md:px-20 flex justify-center bg-surface">
       <div className="w-full max-w-[1184px] flex flex-col gap-8 md:gap-12">
-        {/* Header Section dengan gap 24px antara title group dan deskripsi */}
         <div className="flex flex-col items-start text-left gap-6 max-w-2xl">
-          {/* Title & Heading Group dengan gap 12px */}
-          <div className="flex flex-col items-start text-left gap-[12px]">
-            {/* Section Tag */}
+          <div className="flex flex-col items-start text-left gap-3">
             <span className="font-sans font-normal text-sm leading-5 tracking-[1.25px] uppercase text-accent">
               AMBIENCE
             </span>
-
-            {/* Heading */}
-            <h2 className="font-serif font-medium text-2xl md:text-[44px] leading-[120%] tracking-[0px] text-heading">
+            <h2 className="font-serif font-medium text-2xl md:text-[44px] leading-[120%] tracking-normal text-heading">
               Where Moments Happen
             </h2>
           </div>
-
-          {/* Description */}
           <p className="font-sans font-normal text-sm md:text-base leading-6 md:leading-[26px] text-description">
             A space designed for those who appreciate the finer details. From the natural light that fills our space to the carefully curated seating arrangements, every element is crafted to create an atmosphere of comfort and inspiration.
           </p>
         </div>
 
-        {/* Gallery Grid dengan gap antar card 16px (gap-4) */}
         <div className="flex flex-col gap-4 w-full">
-          {/* Top Row: Primary Card (col-span-2) + 2 Stacked Secondary Cards (col-span-1) */}
+          {/* Baris atas: 1 foto besar + 2 foto kecil bertumpuk */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full justify-items-center md:justify-items-stretch items-start">
-            {/* Primary Card (784x784 max) */}
             <div className="md:col-span-2 w-full flex justify-center">
               <AmbienceCard
                 src="/images/ambience/ambience-1.webp"
@@ -39,8 +29,6 @@ export default function AmbienceSection() {
                 priority
               />
             </div>
-
-            {/* Stacked Secondary Cards (384x384 max each) */}
             <div className="md:col-span-1 flex flex-col gap-4 w-full items-center">
               <AmbienceCard
                 src="/images/ambience/ambience-2.webp"
@@ -55,7 +43,6 @@ export default function AmbienceSection() {
             </div>
           </div>
 
-          {/* Bottom Row: 3 Secondary Cards (384x384 max each) */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full justify-items-center">
             <AmbienceCard
               src="/images/ambience/ambience-6.webp"

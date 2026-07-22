@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 
 export interface AmbienceCardProps {
@@ -18,7 +17,7 @@ export default function AmbienceCard({
 }: AmbienceCardProps) {
   const isPrimary = variant === "primary";
 
-  // Specs: Mobile (288x288), Primary Desktop (784x784), Secondary Desktop (384x384)
+  // primary: 784x784px desktop, secondary: 384x384px desktop, keduanya 288x288px mobile
   const sizeClasses = isPrimary
     ? "w-full max-w-[288px] md:max-w-[784px] aspect-square rounded-2xl"
     : "w-full max-w-[288px] md:max-w-[384px] aspect-square rounded-2xl";

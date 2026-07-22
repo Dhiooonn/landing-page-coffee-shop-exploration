@@ -1,5 +1,3 @@
-import React from 'react';
-
 type ButtonVariant = 'primary' | 'secondary';
 type ButtonSize = 'sm' | 'md' | 'lg';
 
@@ -15,11 +13,11 @@ export function Button({
   children, 
   ...props 
 }: ButtonProps) {
-  const baseStyles = 'font-sans font-medium rounded-full';
+  const baseStyles = 'font-sans font-medium rounded-full cursor-pointer focus-visible:ring-2 focus-visible:ring-accent focus-visible:outline-none transition-all duration-200 active:scale-95';
   
   const variantStyles = {
-    primary: 'bg-primary text-background hover:opacity-90 transition-opacity',
-    secondary: 'bg-white text-heading uppercase tracking-wider hover:bg-surface-icon transition-colors duration-300'
+    primary: 'bg-primary text-background hover:opacity-95 shadow-sm hover:shadow-md',
+    secondary: 'bg-white text-heading uppercase tracking-wider hover:bg-surface-icon shadow-sm hover:shadow-md'
   };
 
   const sizeStyles = {
