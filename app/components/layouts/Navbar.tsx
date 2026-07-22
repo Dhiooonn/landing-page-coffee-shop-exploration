@@ -16,7 +16,7 @@ export default function Navbar() {
             className="h-15 w-auto"
           />
         </Link>
-        <Button variant="primary" size="sm">
+        <Button variant="primary" size="sm" href="#visit">
           Visit Us
         </Button>
       </div>

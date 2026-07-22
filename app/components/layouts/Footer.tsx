@@ -15,10 +15,10 @@ const navColumns: NavColumn[] = [
   {
     title: "MENU",
     links: [
-      { label: "Our Signatures", href: "#signatures" },
-      { label: "Non Coffee", href: "#non-coffee" },
-      { label: "Food", href: "#food" },
-      { label: "Pastry", href: "#pastry" },
+      { label: "Our Signatures", href: "#menu" },
+      { label: "Non Coffee", href: "#menu" },
+      { label: "Food", href: "#menu" },
+      { label: "Pastry", href: "#menu" },
     ],
   },
   {

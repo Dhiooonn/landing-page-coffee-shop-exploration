@@ -1,5 +1,14 @@
+"use client";
+
+import { motion } from "framer-motion";
 import MenuCard from "../../components/ui/MenuCard";
 import { Button } from "../../components/ui/Button";
+import {
+  fadeInUp,
+  staggerContainer,
+  staggerItem,
+  viewportConfig,
+} from "../../components/ui/motionVariants";
 
 const menuItems = [
   {
@@ -42,29 +51,61 @@ const menuItems = [
 
 export default function MenuSection() {
   return (
-    <section className="w-full py-9 md:py-30 px-3 md:px-20 flex justify-center">
+    <section id="menu" className="w-full py-9 md:py-30 px-3 md:px-20 flex justify-center">
       <div className="w-full max-w-[1184px] flex flex-col gap-12 items-center">
-        <div className="flex flex-col items-center text-center gap-5">
-          <span className="font-sans font-normal text-sm leading-5 tracking-[1.25px] uppercase text-accent">
+        {/* Header section fade-in */}
+        <motion.div
+          className="flex flex-col items-center text-center gap-5"
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewportConfig}
+        >
+          <motion.span
+            className="font-sans font-normal text-sm leading-5 tracking-[1.25px] uppercase text-accent"
+            variants={fadeInUp}
+          >
             OUR CRAFT
-          </span>
-          <h2 className="font-serif font-medium text-2xl md:text-4xl leading-[150%] tracking-normal text-heading">
+          </motion.span>
+          <motion.h2
+            className="font-serif font-medium text-2xl md:text-4xl leading-[150%] tracking-normal text-heading"
+            variants={fadeInUp}
+          >
             Highlighted Signature
-          </h2>
-          <p className="font-sans font-normal text-sm md:text-base leading-7 tracking-[-0.15px] text-body max-w-lg text-center">
+          </motion.h2>
+          <motion.p
+            className="font-sans font-normal text-sm md:text-base leading-7 tracking-[-0.15px] text-body max-w-lg text-center"
+            variants={fadeInUp}
+          >
             From classic espresso to signature blends, each cup tells a story
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 w-full justify-items-center">
+        {/* Card grid muncul bergantian */}
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 w-full justify-items-center"
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewportConfig}
+        >
           {menuItems.map((item, index) => (
-            <MenuCard key={index} {...item} />
+            <motion.div key={index} variants={staggerItem} className="w-full flex justify-center">
+              <MenuCard {...item} />
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
 
-        <Button variant="primary" size="lg">
-          Explore Full Menu
-        </Button>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={viewportConfig}
+          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+        >
+          <Button variant="primary" size="lg" href="#menu">
+            Explore Full Menu
+          </Button>
+        </motion.div>
       </div>
     </section>
   );
