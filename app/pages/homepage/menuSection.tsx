@@ -51,7 +51,7 @@ const menuItems = [
 
 export default function MenuSection() {
   return (
-    <section id="menu" className="w-full py-9 md:py-30 px-3 md:px-20 flex justify-center">
+    <section id="menu" className="w-full py-9 md:py-30 px-4 md:px-20 flex justify-center">
       <div className="w-full max-w-[1184px] flex flex-col gap-12 items-center">
         {/* Header section fade-in */}
         <motion.div

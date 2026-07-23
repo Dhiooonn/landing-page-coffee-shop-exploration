@@ -56,7 +56,7 @@ export default function Footer() {
               </span>
               <ul className="flex flex-col gap-2 font-sans font-normal text-xs leading-4 tracking-normal text-white">
                 {col.links.map((link) => (
-                  <li key={link.href}>
+                  <li key={link.label}>
                     {isExternalLink(link.href) ? (
                       <a
                         href={link.href}

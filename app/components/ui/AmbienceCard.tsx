@@ -17,14 +17,13 @@ export default function AmbienceCard({
 }: AmbienceCardProps) {
   const isPrimary = variant === "primary";
 
-  // primary: 784x784px desktop, secondary: 384x384px desktop, keduanya 288x288px mobile
   const sizeClasses = isPrimary
-    ? "w-full max-w-[288px] md:max-w-[784px] aspect-square rounded-2xl"
-    : "w-full max-w-[288px] md:max-w-[384px] aspect-square rounded-2xl";
+    ? "w-full max-w-[400px] md:max-w-[784px] aspect-square rounded-2xl"
+    : "w-full max-w-[400px] md:max-w-[384px] aspect-square rounded-2xl";
 
   const sizesProp = isPrimary
-    ? "(max-width: 768px) 288px, (max-width: 1280px) 66vw, 784px"
-    : "(max-width: 768px) 288px, (max-width: 1280px) 33vw, 384px";
+    ? "(max-width: 768px) 100vw, (max-width: 1280px) 66vw, 784px"
+    : "(max-width: 768px) 100vw, (max-width: 1280px) 33vw, 384px";
 
   return (
     <div className={`relative overflow-hidden group ${sizeClasses} ${className}`}>

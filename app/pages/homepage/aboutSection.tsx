@@ -5,7 +5,7 @@ import { fadeInUp, staggerContainer, viewportConfig } from "../../components/ui/
 
 export default function AboutSection() {
   return (
-    <section className="w-full bg-surface py-9 md:py-30 px-3 md:px-20 flex justify-center">
+    <section className="w-full bg-surface py-9 md:py-30 px-4 md:px-20 flex justify-center">
       <motion.div
         className="w-full max-w-[1184px] flex flex-col items-center justify-center text-center gap-6 md:gap-8"
         variants={staggerContainer}

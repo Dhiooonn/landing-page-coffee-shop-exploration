@@ -73,7 +73,7 @@ export default function VisitUsSection() {
 
         {/* Foto slide dari kanan */}
         <motion.div
-          className="relative w-full max-w-[288px] h-[341.33px] sm:max-w-[400px] sm:h-[480px] md:max-w-[480px] md:h-[560px] lg:max-w-[480px] lg:h-[714.66px] rounded-2xl overflow-hidden shrink-0"
+          className="relative w-full max-w-[400px] h-[380px] sm:max-w-[400px] sm:h-[480px] md:max-w-[480px] md:h-[560px] lg:max-w-[480px] lg:h-[714.66px] rounded-2xl overflow-hidden shrink-0"
           variants={fadeInRight}
           initial="hidden"
           whileInView="visible"

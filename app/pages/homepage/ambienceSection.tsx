@@ -11,7 +11,7 @@ import {
 
 export default function AmbienceSection() {
   return (
-    <section className="w-full py-9 md:py-30 px-3 md:px-20 flex justify-center bg-surface">
+    <section className="w-full py-9 md:py-30 px-4 md:px-20 flex justify-center bg-surface">
       <div className="w-full max-w-[1184px] flex flex-col gap-8 md:gap-12">
         {/* Header fade-in */}
         <motion.div
@@ -86,7 +86,7 @@ export default function AmbienceSection() {
               { src: "/images/ambience/ambience-5.webp", alt: "Vintage coffee roasters storefront window" },
               { src: "/images/ambience/ambience-4.webp", alt: "Modern coffee shop bar counter with stools" },
             ].map((img) => (
-              <motion.div key={img.src} variants={staggerItem}>
+              <motion.div key={img.src} className="w-full flex justify-center" variants={staggerItem}>
                 <AmbienceCard src={img.src} alt={img.alt} variant="secondary" />
               </motion.div>
             ))}

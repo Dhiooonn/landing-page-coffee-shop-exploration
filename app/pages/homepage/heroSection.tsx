@@ -42,7 +42,7 @@ export default function HeroSection() {
         animate="visible"
       >
         <motion.h1
-          className="font-serif font-medium text-4xl leading-[150%] md:text-5xl md:leading-tight lg:text-[52px] tracking-normal text-white"
+          className="font-serif font-medium text-3xl sm:text-4xl md:text-5xl md:leading-tight lg:text-[52px] leading-snug tracking-normal text-white"
           variants={fadeInUp}
         >
           Find Your Coffee, Bar &<br className="hidden sm:inline" />
