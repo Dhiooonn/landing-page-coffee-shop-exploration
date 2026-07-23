@@ -35,7 +35,7 @@ const serveItems = [
 
 export default function ServeSection() {
   return (
-    <section className="w-full bg-surface py-9 md:py-30 px-4 md:px-20 flex justify-center">
+    <section className="w-full bg-surface py-9 md:py-30 px-4 md:px-20 flex justify-center overflow-hidden">
       <div className="w-full max-w-[1184px] flex flex-col items-center gap-12">
         <motion.div
           className="flex flex-col items-center text-center gap-5"

@@ -6,7 +6,7 @@ import { fadeInUp, staggerContainer, viewportConfig } from "../../components/ui/
 
 export default function SocialProofSection() {
   return (
-    <section className="w-full py-9 md:py-30 px-4 md:px-20 flex flex-col items-center justify-center text-center gap-3">
+    <section className="w-full py-9 md:py-30 px-4 md:px-20 flex flex-col items-center justify-center text-center gap-3 overflow-hidden">
       <motion.div
         className="flex flex-col items-center gap-3"
         variants={staggerContainer}

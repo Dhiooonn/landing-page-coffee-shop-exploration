@@ -12,7 +12,7 @@ import {
 
 export default function VisitUsSection() {
   return (
-    <section id="visit" className="w-full py-9 md:py-24 lg:py-30 px-3 md:px-8 lg:px-20 flex justify-center bg-background">
+    <section id="visit" className="w-full py-9 md:py-24 lg:py-30 px-4 md:px-8 lg:px-20 flex justify-center bg-background overflow-hidden">
       <div className="w-full max-w-[1184px] px-0 lg:px-[108px] flex flex-col lg:flex-row items-center justify-between gap-8 md:gap-12 lg:gap-16">
         {/* Kolom kiri slide dari kiri */}
         <motion.div
